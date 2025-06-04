@@ -1,6 +1,7 @@
 const express = require('express')
 const path = require("path");
 const app = express()
+const helloController = require('./controllers/helloController')
 
 // #############################################################################
 // Logs all request paths and method
@@ -23,6 +24,10 @@ var options = {
   redirect: false
 }
 app.use(express.static('public', options))
+
+// #############################################################################
+// Hello world controller route
+app.get('/hello', helloController.home)
 
 // #############################################################################
 // Catch all handler for all other request.

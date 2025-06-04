@@ -34,3 +34,8 @@ Ask a question or give us a shout out:
 
 - 💌 hello@cyclic.sh
 - 🐣 https://twitter.com/cyclicsoftware
+
+## New Example Route
+
+This app now exposes a `/hello` endpoint handled by a simple controller that
+returns a JSON greeting.
