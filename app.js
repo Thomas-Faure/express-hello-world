@@ -42,7 +42,6 @@ app.use('*', (req,res) => {
       cookies: req.cookies,
       params: req.params
     })
-    .end()
 })
 
 module.exports = app
